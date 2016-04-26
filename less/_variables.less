@@ -1,4 +1,5 @@
 @import "_colors.less";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 // Typography elements
 @mdb-font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -20,24 +21,41 @@
 // Converted bs variables
 
 // Bootstrap brand color customization
-@brand-primary: @teal;
-@brand-success: @green;
-@brand-danger: @red;
-@brand-warning: @deep-orange;
-@brand-info: @light-blue;
+@brand-primary: @brand-dark-blue;
+@brand-success: @accent-green;
+@brand-danger:  @brand-red;
+@brand-warning: @brand-orange;
+@brand-info:    @brand-blue;
 
-@border-radius-base: 2px;
+@body-bg: @background-color;
+@link-color: @brand-success;
+@text-color: @primary-text-color;
+
+
+// Bootstrap font size customization
+@font-size-base:   14px;
+@font-size-large:  16px;
+@font-size-small:  12px;
+
+@font-size-h1:     48px;
+@font-size-h2:     30px;
+@font-size-h3:     24px;
+@font-size-h4:     14px;
+@font-size-h5:     12px;
+@font-size-h6:     12px;
+
+@border-radius-base:  2px;
 @border-radius-small: 1px;
 
 // Typography
-@font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+@font-family-sans-serif: 'Open Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif;
 @headings-font-weight: 300;
 
-@body-bg: #EEEEEE;
 //---
 
 // import bs variables for sass, first declared wins.
 @import "_import-bs-sass.less";
+
 
 // Bootstrap Material Design variables start with mdb-
 @mdb-brand-inverse: @indigo;
@@ -117,7 +135,7 @@
 @mdb-card-body-background: #fff;
 @mdb-card-image-headline: #fff;
 
-@text-disabled: #a8a8a8;
+@text-disabled: @disabled-text-color;
 @background-disabled: #eaeaea;
 
 // Checkboxes
